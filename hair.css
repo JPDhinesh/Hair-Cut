@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&family=Potta+One&display=swap');
+
+/* home page*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+.header {
+    background: linear-gradient(rgba(46, 33, 33, 0.4), #009688), url(images/2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+}
+
+.navbar-logo a {
+    color: white !important;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.navbar-logo a img {
+    padding: 3px;
+    transform: rotate(180deg);
+}
+
+#toggle {
+    color: white;
+    font-size: 20px;
+    padding: 2px 5px;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.offcanvas {
+    width: 250px;
+    background-color: #10e7dc;
+}
+
+.offcanvas-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 70px
+}
+
+#exit {
+    font-size: 15px;
+    color: black;
+}
+
+#exit:hover {
+    transform: scale(1.3);
+}
+
+.offcanvas-body {
+    margin-top: 30px;
+}
+
+.offcanvas-body ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 40px;
+}
+
+.offcanvas-body li {
+    margin: 20px 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.offcanvas-body li a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.offcanvas-body li:hover {
+    border-bottom: 2px solid pink;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.studio-title {
+    color: white;
+    font-family: 'Potta One';
+}
+
+.studio p {
+    color: white;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.content .links {
+    margin-top: 50px;
+}
+
+.content .links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 2px #009688 solid;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    transition: 0.5s;
+}
+
+.content .links a span {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.content .links a:hover span {
+    width: 100%;
+}
+
+.content .links a:hover {
+    color: black;
+}
+
+
+/* home page*/
+
+.choose-us .headers {
+    text-align: center;
+    padding: 5px;
+}
+
+.choose-us .headers img {
+    width: 250px;
+}
+
+.choose-us .headers h1 {
+    font-weight: 700;
+}
+
+.choose-us .row-1 {
+    padding: 40px 0;
+}
+
+.choose-us .row-1 h5 {
+    color: #10e7dc;
+    font-weight: 500;
+}
+
+.Staff-content,
+.Online-content,
+.Cost-content {
+    display: flex;
+}
+
+.Staff-content .fas,
+.Online-content .far,
+.Cost-content .fas {
+    border: 2px #10e7dc solid;
+    margin-top: 7px;
+    padding: 4px;
+    border-radius: 5px;
+    color: #10e7dc;
+}
+
+.Staff-content p,
+.Online-content p,
+.Cost-content p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.choose-us .row-1 .no-images {
+    background: linear-gradient(rgba(46, 33, 33, 0.4), #009688), url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#services {
+    background-color: #f8f6f6;
+    padding-bottom: 80px;
+}
+
+.styling {
+    margin-top: 70px;
+}
+
+.styling h4 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.styling h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.styling .service-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.styling .single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.styling .single-service img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.styling .overlays {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+    top: 0px;
+    cursor: pointer;
+    border-radius: 7px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.styling .single-service:hover .overlays {
+    opacity: 1;
+}
+
+.styling .overlays h3 {
+    top: 50%;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+    .single-service {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.reviews {
+    padding: 100px 0;
+}
+
+.reviews h4 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.reviews h1 {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.card-heading {
+    margin: 10px;
+    position: relative;
+}
+
+.card-heading img {
+    border-radius: 50%;
+}
+
+.card-heading div {
+    margin: 5px;
+}
+
+.card-heading div h3 {
+    text-transform: uppercase;
+    color: lightseagreen;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-heading div h3 i {
+    color: #1DA1F2;
+    font-size: 17px;
+    margin: 0 5px;
+}
+
+.card-heading div small {
+    position: absolute;
+    top: 40px;
+    color: lightgray;
+    font-size: 15px;
+}
+
+.card-information {
+    outline: none;
+    border: none;
+    box-shadow: 10px 10px 15px #cbced1, -10px -10px 15px #ffffff;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 5px 0;
+}
+
+.card-information .card-body p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.card-information:hover {
+    transform: translateY(-15px);
+}
+
+#call-us {
+    background-color: #dbd1d1;
+}
+
+.contact-information h4 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.contact-information h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.working-time {
+    position: relative;
+}
+
+.working-time h4 {
+    text-align: start;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.working-time .week-days i {
+    position: absolute;
+    top: 56px;
+    color: #009688;
+    margin-left: 15px;
+}
+
+.working-time .week-days p {
+    margin-left: 40px;
+}
+
+.working-time .week-end i {
+    position: absolute;
+    top: 96px;
+    color: #009688;
+    margin-left: 15px;
+}
+
+.working-time .week-end p {
+    margin-left: 40px;
+}
+
+.contact-list h4 {
+    text-align: end;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.address-list i,
+.mail-list i,
+.tele-phone i {
+    color: #009688;
+    margin-right: 15px;
+}
+
+.address-list p,
+.mail-list p,
+.tele-phone p {
+    margin-right: 10px;
+}
+
+.social-media {
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media i {
+    text-align: center;
+    border: 2px #228B22 solid;
+    padding: 5px;
+    font-size: 15px;
+    margin: 0 3px;
+    border-radius: 10px;
+    color: #228B22;
+    transition: 0.5s;
+}
+
+.social-media a:hover i {
+    transform: translateY(-10px);
+}
+
+.social-media p {
+    padding-top: 20px;
+    font-size: 11px;
+    color: gray;
+}
