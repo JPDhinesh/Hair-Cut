@@ -104,14 +104,18 @@
     font-family: 'Potta One';
 }
 
-.studio p {
+.content .links .colll {
+    padding: 2px;
+}
+
+.content p {
     color: white;
     font-style: italic;
     opacity: 0.8;
 }
 
 .content .links {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .content .links a {
@@ -270,7 +274,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .single-service {
+    .styling .single-service {
         flex-basis: 100%;
         margin-bottom: 30px;
     }
